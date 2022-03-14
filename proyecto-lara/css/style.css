@@ -194,6 +194,13 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
+    transition: all 1.5s;
+}
+
+.productos__bloque-elemento1:hover{
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -o-transform: scale(1.1) ;
 }
 
 
