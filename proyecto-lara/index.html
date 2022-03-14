@@ -15,6 +15,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
+ <!-- AOS -->
+ <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 </head>
 
@@ -49,26 +51,28 @@
     <!-- Productos -->
 
     <section class="productos1"> 
-        <div class="productos__bloque1">
-            <div class="productos__bloque-elemento">
-                <img src="./img/bowl-s.jpg" alt="">
-                <p>BOWL S</p>
-                <P>$390,00</P>
-            </div>
 
-            <div class="productos__bloque-elemento">
-                <img src="./img/bowl-m.jpg" alt="">
-                <p>BOWL M</p>
-                <P>$610,00</P>
-            </div>
+        <div data-aos="zoom-in" data-aos-duration="3000">
+            <div class="productos__bloque1">
+                <div class="productos__bloque-elemento">
+                    <img src="./img/bowl-s.jpg" alt="">
+                    <p>BOWL S</p>
+                    <P>$390,00</P>
+                </div>
 
-            <div class="productos__bloque-elemento">
-                <img src="./img/bowl-l.jpg" alt="">
-                <p>BOWL L</p>
-                <P>$1.190,00</P>
+                <div class="productos__bloque-elemento">
+                    <img src="./img/bowl-m.jpg" alt="">
+                    <p>BOWL M</p>
+                    <P>$610,00</P>
+                </div>
+
+                <div class="productos__bloque-elemento">
+                    <img src="./img/bowl-l.jpg" alt="">
+                    <p>BOWL L</p>
+                    <P>$1.190,00</P>
+                </div>
             </div>
         </div>
-        
 
         <div class="boton">
         <a href="./pages/productos.html" class="productos__boton">VER PRODUCTOS</a>
@@ -110,6 +114,13 @@
             </div>
         </section>
     </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
+    </div>
+
     </div>
 </body>
 </html>
