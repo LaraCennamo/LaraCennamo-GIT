@@ -3,56 +3,23 @@
 /** Barra de Navegación **/
 
 header {
-    background-image: url(../img/background-nav.jpg); 
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding-bottom: 600px;
+    background-color: rgb(0, 0, 0);
 }
 
-.navBar h1 {
-    color: #FFFFFF;
+.huellas {
+    color: rgb(255, 255, 255);
     text-align: center;
-    padding-top: 2rem;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
-    font-size: 3rem;
+    font-size: 2.8rem;
+    padding-top: 1rem;
+}
+.link-modificado {
+    color: rgb(255, 255, 255);
 }
 
-.nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-.navBar ul li a{
-    list-style-type: none;
-    text-decoration: none;
-    color: #FFFFFF;
-    font-family: 'Noto Sans', sans-serif;
-    font-size: 1rem;
-}
-
-.navBar ul li {
-    display: inline-block;
-    margin: 3rem 0.5rem 0 0.5rem;
-    transition: all 0.5s;
-}
-
-.navBar {
-    background-color: rgba(0, 0, 0, 0.1);
-    position: fi;
-    width: 100%;
-    padding-bottom: 1.5rem;
-}
-
-.link:hover{
-    color: rgb(0, 108, 116);
-}
-
-.menu:hover{
-    transform: scale(1.1);
-    -webkit-transform: scale(1.1);
-    -o-transform: scale(1.1) ;
+.link-modificado:hover{
+    color: rgb(15, 133, 141);
 }
 
 
