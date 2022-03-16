@@ -1,6 +1,6 @@
 *{padding: 0%; margin: 0%; box-sizing: border-box;}
 
-/** Barra de Navegación **/
+/* Header - Nav */
 
 header {
     background-color: rgb(0, 0, 0);
@@ -22,9 +22,7 @@ header {
     color: rgb(15, 133, 141);
 }
 
-
-
-/** Información **/
+/* Información index */
 
 .informacion {
     text-align: center;
@@ -35,19 +33,19 @@ header {
 .informacion__titulo {
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
-    font-size: 2.2rem;
-    color: rgb(0, 108, 116);
+    font-size: 1.7rem;
+    color: rgb(15, 133, 141);
     margin-top: 3rem;
 }
 
 .informacion__texto {
     font-family: 'Noto Sans', sans-serif;
-    font-size: 1rem;
+    font-size: 0.9rem;
     margin-top: 2rem;
+    margin-bottom: 1.5rem;
 }
 
-
-/** Productos index **/
+/* Productos index */
 
 .productos__bloque1{
     display: flex;
@@ -63,52 +61,19 @@ header {
     padding-bottom: 1rem;
 }
 
-.productos img {
-    padding-bottom: 1rem;
-}
-
 .productos p {
     font-family: 'Roboto', sans-serif;
-    padding-bottom: 1rem;
 }
 
 .boton {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    font-family: 'Roboto', sans-serif;
     margin: 4rem 0 5rem 0;
 }
 
-.productos__boton {
-    text-decoration: none;    
-    font-family: 'Roboto', sans-serif;
-    color: rgb(0, 0, 0);
-    border: 0.1rem;
-    border-style:groove;
-    border-color: rgb(0, 0, 0);
-    padding: 0.5rem;
-    transition: all 0.6s;
-}
-
-.productos__boton:hover {
-    background-color: black;
-    color: #FFFFFF;
-    transform: scale(1.2);
-    -webkit-transform: scale(1.1);
-    -o-transform: scale(1.1) ;
-}
-
-/** CONTAINER GRID PADRE**/
-
-.grid-contenedor-padre{
-    display: grid;
-    grid-template-columns: 1fr;
-}
-
-
-
-/** Texto Quiénes somos **/
-
+/* About */
 
 .texto {
     margin: 4rem 2rem 4rem 2rem ;
@@ -121,15 +86,8 @@ header {
     line-height: 1.7rem;
 }
 
-.grid-contenedor-about{
-    display: grid;
-    grid-template-columns: 1fr;
-}
 
-
-/** Página produtos **/
-
-
+/* Página Productos */
 
 .productos__titulo {
     font-family: 'Roboto', sans-serif;
@@ -147,20 +105,11 @@ header {
     grid-area: productosp;
 }
 
-/**
-.productos__bloque{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-}
-**/
-
-
 .productos__bloque-elemento1{
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 1.5rem;
     transition: all 1.5s;
 }
 
@@ -170,42 +119,38 @@ header {
     -o-transform: scale(1.1) ;
 }
 
-
-.elemento1{grid-area: elemento1;}
-.elemento2{grid-area: elemento2;}
-.elemento3{grid-area: elemento3;}
-.elemento4{grid-area: elemento4;}
-.elemento5{grid-area: elemento5;}
-.elemento6{grid-area: elemento6;}
-.elemento7{grid-area: elemento7;}
-.elemento8{grid-area: elemento8;}
+.productos__bloque{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+}
 
 
 
-/** Galería **/
+/* Preguntas frecuentes */
 
 .informacion2{
     text-align: justify;
 }
 
 .informacion2 h2{
-        font-family: 'Roboto', sans-serif;
-        font-weight: 300;
-        font-size: 2rem;
-        color: rgb(0, 108, 116);
-        text-align: center;
-        padding-bottom: 1rem;
-        margin-top: 3rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 2rem;
+    color: rgb(0, 108, 116);
+    text-align: center;
+    padding-bottom: 1rem;
+    margin-top: 3rem;
 }
 
 .informacion__lista {
     list-style-type: none;
     text-decoration: none;
     font-family: 'Noto Sans', sans-serif;
-    text-align: justify;
     text-align: center;
-    margin: 0 5rem 0 5rem;
     padding-top: 1.5rem;
+    padding-right: 2rem;
 
 }
 
@@ -213,13 +158,10 @@ header {
     padding-bottom: 1rem;
 }
 
-.informacion {
-    margin-bottom: 3rem;
-}
-
 .imagenes {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     padding-top: 2rem;
     border: 0.1rem;
     border-top-style:groove;
@@ -228,13 +170,12 @@ header {
 }
 
 
-/** Contacto **/
+/* Contacto */
 
 .formulario {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 5rem;
 }
 
 .formulario ul li {
@@ -242,7 +183,7 @@ header {
     font-family: 'Noto Sans', sans-serif;
     text-align: justify;
     color: #797979;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     border: 0.1rem;
     border-style:groove;
     border-color: rgb(0, 0, 0);
@@ -257,12 +198,13 @@ header {
 }
 
 .contacto { 
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
     text-align: center;
     font-size: 1rem
 }
 
-/** Footer **/
+
+/* Footer */
 
 footer {
     background-color: black;
@@ -337,142 +279,109 @@ footer {
     padding-right: 0.6rem;
 }
 
+/* -------------------------------- TABLET --------------------------------------------- */
 
 @media screen and (min-width: 768px) {
 
-    .container_grid {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-areas: 
-        "container1 container2"
-        "container1 container3";
-        margin-bottom: 8rem;
-    
-  
-    }
-
-    .productos__bloque{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-areas:
-        "elemento1 elemento2" 
-        "elemento3 elemento4"
-        "elemento5 elemento6"
-        "elemento7 elemento8";
-    }
-
-    
-    .footer-section {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        margin-left: 1rem;
-        margin-right: 10rem;
-
-    }
-
-
-    .texto {
-        margin: 4rem 10rem 4rem 10rem ;
-    }
-
-
-    .informacion__lista-item {
-        padding-bottom: 1rem;
-        padding-left: 8rem;
-        text-align: justify;
-    }
-
-    .imagenes {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        margin: 0 6rem 3rem 6rem;
-        padding-top: 2rem;
-        border: 0.1rem;
-        border-top-style:groove;
-        border-color: rgb(0, 0, 0);
-    }
-
-    .mensaje {
-        padding: 1rem 30rem 1rem 1rem;
-    }
-    
-    .mensaje-contacto {
-        padding: 1rem 30rem 12rem 1rem;
-    }
+.informacion__titulo { 
+    font-size: 2rem;
 }
+
+.informacion__texto {
+    font-size: 1rem;
+    margin-bottom: 5rem;
+}
+
+/* About */
+
+.texto {
+    margin: 4rem 10rem 4rem 10rem ;
+}
+
+/* Pagina Productos 
+
+
+/* Preguntas frecuentes */
+
+.informacion__lista-item {
+    padding-bottom: 1rem;
+    text-align: justify;
+}
+
+.imagenes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0 6rem 3rem 6rem;
+    padding-top: 2rem;
+    border: 0.1rem;
+    border-top-style:groove;
+    border-color: rgb(0, 0, 0);
+}
+
+/* Footer */
+
+.footer-section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-left: 1rem;
+    margin-right: 10rem;
+
+}
+
+
+}
+
+
+
+/* -------------------------------- DESCKTOP -------------------------------------------- */
 
 @media screen and (min-width: 1200px){
 
-    header{
-        grid-area: header;
-        margin-bottom: 8rem;
-    }
+.informacion { 
+    margin: 0 10rem 0 10rem;
+}
+
+.informacion__texto{
+    font-size: 1.1rem;
+}
+
+/* About*/
+
+.texto {
+    margin: 8rem 20rem 8rem 20rem ;
+}
+
+/* Pagina Productos */
+
+.productos__bloque{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    margin: 0 8rem 0 8rem;
+}
+
+/* Preguntas frecuentes */
+
+.informacion__lista-item {
+    padding-left: 10rem;
+}
+
+/* Contacto */
+
+.mensaje {
+    padding: 1rem 35rem 1rem 1rem;
+}
+
+.mensaje-contacto {
+    padding: 1rem 35rem 12rem 1rem;
+}
 
 
-    .informacion__titulo {
-        font-size: 2.2rem;
-        color: rgb(0, 108, 116);
-        margin-top: 0%;
-    }
 
-    .informacion h3 {
-        margin-top: 3rem;
-    }
-    
-    .informacion__texto {
-        font-family: 'Noto Sans', sans-serif;
-        font-size: 1.2rem;
-        margin-top: 2rem;
-    }
-
-    .informacion ul li {
-        list-style-type: none;
-        text-decoration: none;
-        padding: 0%;
-    }
-
-    .informacion ul{
-        display: flex;
-        flex-direction: column;
-    }
-
-    .productos{ 
-        grid-area: productos;
-    }
-
-    footer{
-        grid-area: footer;
-    }
-
-
-    .productos__bloque{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-areas:
-        "elemento1 elemento2 elemento3 elemento4"
-        "elemento5 elemento6 elemento7 elemento8";
-
-    }
-
-    .productos__titulo {
-        margin-top: 0%;
-    }
-
-    .texto {
-        margin: 8rem 20rem 8rem 20rem ;
-    }
-
-
-    .mensaje {
-        padding: 1rem 35rem 1rem 1rem;
-    }
-    
-    .mensaje-contacto {
-        padding: 1rem 35rem 12rem 1rem;
-    }
 
 }
 
