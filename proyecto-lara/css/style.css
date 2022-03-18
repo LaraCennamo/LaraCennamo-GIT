@@ -123,7 +123,7 @@ header {
     font-size: 2rem;
     color: rgb(0, 108, 116);
     text-align: center;
-    padding-bottom: 5rem;
+    padding-bottom: 3rem;
     margin-top: 3rem;
 }
 
@@ -137,13 +137,19 @@ header {
     flex-direction: column;
     align-items: center;
     margin-bottom: 1.5rem;
-    transition: all 1.5s;
+    transition: all 1s;
 }
 
 .productos__bloque-elemento1:hover{
-    transform: scale(1.1);
-    -webkit-transform: scale(1.1);
-    -o-transform: scale(1.1) ;
+    transform: scale(1.02);
+    -webkit-transform: scale(1.02);
+    -o-transform: scale(1.02) ;
+
+    border: 0.1rem;
+    border-style:groove;
+    border-color: rgb(15, 133, 141);
+    background-color: rgb(220, 238, 240);
+    font-weight: 500;
 }
 
 .productos__bloque{
@@ -151,6 +157,11 @@ header {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content:space-evenly;
+}
+
+
+.productos_pagindividual{
+    margin-bottom: 2rem;
 }
 
 
@@ -213,6 +224,7 @@ header {
     margin-bottom: 1rem;
     border: 0.1rem;
     border-style:groove;
+    border-radius: 5px;
     border-color: rgb(0, 0, 0);
 }
 
@@ -382,15 +394,13 @@ footer {
     display: none;
 }
 
-
-
 .informacion { 
     margin: 0 10rem 0 10rem;
 }
 
-/* .informacion__texto{ 
+.informacion__texto{ 
     font-size: 1.1rem;
-}*/
+}
 
 /* About*/
 
@@ -423,8 +433,6 @@ footer {
 .mensaje-contacto {
     padding: 1rem 35rem 12rem 1rem;
 }
-
-
 
 
 }
