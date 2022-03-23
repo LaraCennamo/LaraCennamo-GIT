@@ -103,4 +103,100 @@ footer section {
   }
 }
 
+.informacion {
+  text-align: center;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+.informacion div h2 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 1.7rem;
+  color: #0f858d;
+  margin-top: 3rem;
+}
+.informacion div p {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+}
+@media screen and (min-width: 768px) {
+  .informacion .informacion h2 {
+    font-size: 2rem;
+  }
+  .informacion .informacion p {
+    font-size: 1rem;
+    margin-bottom: 5rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .informacion .informacion {
+    margin: 0 8rem 0 8rem;
+  }
+  .informacion .informacion p {
+    font-size: 1.1rem;
+  }
+}
+
+.productos1 .productos__bloque1 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.productos1 .productos__bloque1 .productos__bloque-elemento {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 1rem;
+}
+.productos1 .productos__bloque1 .productos__bloque-elemento:hover {
+  border: 0.1rem;
+  border-style: groove;
+  border-color: #0f858d;
+  background-color: #c3e5e7;
+}
+.productos1 .boton {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-family: "Roboto", sans-serif;
+  margin: 4rem 0 5rem 0;
+}
+.productos1 .boton a {
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  color: black;
+  border: 0.1rem;
+  border-style: groove;
+  border-color: black;
+  border-radius: 5px;
+  padding: 0.5rem;
+}
+.productos1 .boton a:hover {
+  background-color: black;
+  color: white;
+}
+
+section {
+  margin: 4rem 1rem 4rem 1rem;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 1.1rem;
+}
+section p {
+  padding-bottom: 2rem;
+  line-height: 1.7rem;
+}
+@media screen and (min-width: 768px) {
+  section {
+    margin: 4rem 10rem 4rem 10rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  section {
+    margin: 8rem 15rem 8rem 15rem;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */

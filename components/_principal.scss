@@ -1,0 +1,97 @@
+@import "../base/variables";
+
+.informacion{
+    text-align: center;
+    padding-left: 2rem;
+    padding-right: 2rem;
+
+    div{
+
+        h2{
+            font-family: 'Roboto', sans-serif;
+            font-weight: 300;
+            font-size: 1.7rem;
+            color: $c-aqua;
+            margin-top: 3rem;
+        }
+        
+        p{
+            font-family: 'Noto Sans', sans-serif;
+            font-size: 1rem;
+            margin-top: 2rem;
+            margin-bottom: 1.5rem;
+        }
+    }
+
+     @media screen and (min-width: 768px){
+
+         .informacion{
+             h2{
+                 font-size: 2rem;
+             }
+
+             p{
+                 font-size: 1rem;
+                 margin-bottom: 5rem;
+             }
+         }
+     }
+
+     @media screen and (min-width: 1200px){
+         .informacion{
+             margin: 0 8rem 0 8rem;
+
+             p{
+                 font-size: 1.1rem;
+            }
+         }
+
+
+  }
+
+}
+
+.productos1{
+    .productos__bloque1{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+
+        .productos__bloque-elemento{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-bottom: 1rem;
+
+            &:hover{
+                border: 0.1rem;
+                border-style:groove;
+                border-color: rgb(15, 133, 141);
+                background-color: rgb(195, 229, 231);
+                
+            }
+        }
+    }
+
+    .boton{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        font-family: 'Roboto', sans-serif;
+        margin: 4rem 0 5rem 0;
+        
+        a{
+            text-decoration: none;    
+            font-family: 'Roboto', sans-serif;
+            color: rgb(0, 0, 0);
+            border: 0.1rem;
+            border-style:groove;
+            border-color: rgb(0, 0, 0);
+            border-radius: 5px;
+            padding: 0.5rem;
+            &:hover{background-color: black;
+                color: $c-blanco;}
+        }
+    }
+}
