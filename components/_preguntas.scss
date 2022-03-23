@@ -1,0 +1,65 @@
+@import "../base/variables";
+
+.preguntas{
+    h2{
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+        font-size: 2rem;
+        color: $c-aqua;
+        text-align: center;
+        padding-bottom: 1rem;
+        margin-top: 3rem;
+    }
+
+    ul{
+        list-style-type: none;
+        text-decoration: none;
+        font-family: 'Noto Sans', sans-serif;
+        text-align: center;
+        padding-top: 1.5rem;
+        padding-right: 2rem;
+        
+        li{
+            padding-bottom: 1rem;
+
+            @media screen and (min-width: 768px){
+                padding-bottom: 1rem;
+                text-align: justify;
+            }
+
+            @media screen and (min-width: 1200px){
+                padding-left: 4rem;
+            }
+
+        }
+    }
+
+    @media screen and (min-width: 1200px){
+        margin: 0 15rem 0 10rem;
+    }
+
+}
+
+
+
+.imagenes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 2rem;
+    border: 0.1rem;
+    border-top-style:groove;
+    border-color: rgb(0, 0, 0);
+    margin-bottom: 2rem;
+
+    @media screen and (min-width: 768px){
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: 0 6rem 3rem 6rem;
+        padding-top: 2rem;
+        border: 0.1rem;
+        border-top-style:groove;
+        border-color: rgb(0, 0, 0);
+    }
+}

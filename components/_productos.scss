@@ -1,0 +1,48 @@
+@import "../base/variables";
+@import "../components/header";
+
+.productos_pagindividual{
+    h2{
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+        font-size: 2rem;
+        color: $c-aqua;
+        text-align: center;
+        padding-bottom: 3rem;
+        margin-top: 3rem;
+    }
+
+    p{
+        font-family: 'Roboto', sans-serif;
+        padding-bottom: 1rem;
+    }
+
+    .productos__bloque{
+        .productos__bloque-elemento1{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 1.5rem;
+            transition: all 1s;
+
+        &:hover{
+            transform: scale(1.02);
+            -webkit-transform: scale(1.02);
+            -o-transform: scale(1.02) ;
+        
+            border: 0.1rem;
+            border-style:groove;
+            border-color: $c-aqua;
+            background-color:rgb(220, 238, 240);
+            font-weight: 500;
+        }
+        }
+
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content:space-evenly;
+    }
+
+    margin-bottom: 2rem;
+}

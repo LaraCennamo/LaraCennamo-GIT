@@ -1,0 +1,76 @@
+.formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    ul{
+        li{
+            list-style-type: none;
+            font-family: 'Noto Sans', sans-serif;
+            text-align: justify;
+            color: #797979;
+            margin-bottom: 1rem;
+            border: 0.1rem;
+            border-style:groove;
+            border-radius: 5px;
+            border-color: rgb(0, 0, 0);
+        }
+    }
+
+    .mensaje{
+        padding: 1rem 20rem 1rem 1rem;
+    }
+
+    .mensaje-contacto{
+        padding: 1rem 20rem 12rem 1rem;
+    }
+
+    @media screen and (min-width: 1200px){
+        .mensaje {
+            padding: 1rem 35rem 1rem 1rem;
+        }
+        
+        .mensaje-contacto {
+            padding: 1rem 35rem 12rem 1rem;
+        }
+    }
+
+}
+
+.informacion2{
+    text-align: center;
+    padding-left: 2rem;
+    padding-right: 2rem;
+
+    h2{  font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+        font-size: 1.7rem;
+        color: rgb(15, 133, 141);
+        margin-top: 3rem;}
+
+    p{  font-family: 'Noto Sans', sans-serif;
+        font-size: 1rem;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+}
+}
+
+.boton{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+    margin: 1rem 0 2rem 0;
+    
+    a{
+        text-decoration: none;    
+        font-family: 'Roboto', sans-serif;
+        color: rgb(0, 0, 0);
+        border: 0.1rem;
+        border-style:groove;
+        border-color: rgb(0, 0, 0);
+        border-radius: 5px;
+        padding: 0.5rem;
+        &:hover{background-color: black;
+            color: $c-blanco;}
+    }
+}

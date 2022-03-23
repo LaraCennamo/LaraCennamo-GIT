@@ -1,3 +1,317 @@
+.informacion {
+  text-align: center;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+.informacion div h2 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 1.7rem;
+  color: #0f858d;
+  margin-top: 3rem;
+}
+.informacion div p {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+}
+@media screen and (min-width: 768px) {
+  .informacion .informacion h2 {
+    font-size: 2rem;
+  }
+  .informacion .informacion p {
+    font-size: 1rem;
+    margin-bottom: 5rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .informacion .informacion {
+    margin: 0 2rem 0 2rem;
+  }
+  .informacion .informacion p {
+    font-size: 1.1rem;
+  }
+}
+
+.productos1 .productos__bloque1 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.productos1 .productos__bloque1 .productos__bloque-elemento {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 1rem;
+}
+.productos1 .productos__bloque1 .productos__bloque-elemento:hover {
+  border: 0.1rem;
+  border-style: groove;
+  border-color: #0f858d;
+  background-color: #c3e5e7;
+}
+.productos1 .boton {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-family: "Roboto", sans-serif;
+  margin: 4rem 0 5rem 0;
+}
+.productos1 .boton a {
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  color: black;
+  border: 0.1rem;
+  border-style: groove;
+  border-color: black;
+  border-radius: 5px;
+  padding: 0.5rem;
+}
+.productos1 .boton a:hover {
+  background-color: black;
+  color: white;
+}
+
+.texto {
+  margin: 4rem 1rem 4rem 1rem;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 1.1rem;
+}
+.texto p {
+  padding-bottom: 2rem;
+  line-height: 1.7rem;
+}
+@media screen and (min-width: 768px) {
+  .texto {
+    margin: 4rem 10rem 4rem 10rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .texto {
+    margin: 8rem 15rem 8rem 15rem;
+  }
+}
+
+.preguntas h2 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 2rem;
+  color: #0f858d;
+  text-align: center;
+  padding-bottom: 1rem;
+  margin-top: 3rem;
+}
+.preguntas ul {
+  list-style-type: none;
+  text-decoration: none;
+  font-family: "Noto Sans", sans-serif;
+  text-align: center;
+  padding-top: 1.5rem;
+  padding-right: 2rem;
+}
+.preguntas ul li {
+  padding-bottom: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .preguntas ul li {
+    padding-bottom: 1rem;
+    text-align: justify;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .preguntas ul li {
+    padding-left: 4rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .preguntas {
+    margin: 0 15rem 0 10rem;
+  }
+}
+
+.imagenes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 2rem;
+  border: 0.1rem;
+  border-top-style: groove;
+  border-color: black;
+  margin-bottom: 2rem;
+}
+@media screen and (min-width: 768px) {
+  .imagenes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0 6rem 3rem 6rem;
+    padding-top: 2rem;
+    border: 0.1rem;
+    border-top-style: groove;
+    border-color: black;
+  }
+}
+
+header {
+  background-color: black;
+}
+header nav {
+  font-size: 0.7rem;
+}
+header nav ul li .link-modificado {
+  color: white;
+}
+header nav ul li .link-modificado:hover {
+  color: #0f858d;
+}
+header h1 {
+  color: white;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 2.2rem;
+  padding-top: 1rem;
+}
+header .horizontal {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  header .vertical {
+    display: none;
+  }
+  header .horizontal {
+    display: contents;
+  }
+  header h1 {
+    font-size: 2.5rem;
+  }
+  header nav {
+    font-size: 1rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  header .horizontal {
+    display: contents;
+  }
+  header .vertical {
+    display: none;
+  }
+}
+
+.productos_pagindividual {
+  margin-bottom: 2rem;
+}
+.productos_pagindividual h2 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 2rem;
+  color: #0f858d;
+  text-align: center;
+  padding-bottom: 3rem;
+  margin-top: 3rem;
+}
+.productos_pagindividual p {
+  font-family: "Roboto", sans-serif;
+  padding-bottom: 1rem;
+}
+.productos_pagindividual .productos__bloque {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.productos_pagindividual .productos__bloque .productos__bloque-elemento1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  transition: all 1s;
+}
+.productos_pagindividual .productos__bloque .productos__bloque-elemento1:hover {
+  transform: scale(1.02);
+  -webkit-transform: scale(1.02);
+  -o-transform: scale(1.02);
+  border: 0.1rem;
+  border-style: groove;
+  border-color: #0f858d;
+  background-color: #dceef0;
+  font-weight: 500;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.formulario ul li {
+  list-style-type: none;
+  font-family: "Noto Sans", sans-serif;
+  text-align: justify;
+  color: #797979;
+  margin-bottom: 1rem;
+  border: 0.1rem;
+  border-style: groove;
+  border-radius: 5px;
+  border-color: black;
+}
+.formulario .mensaje {
+  padding: 1rem 20rem 1rem 1rem;
+}
+.formulario .mensaje-contacto {
+  padding: 1rem 20rem 12rem 1rem;
+}
+@media screen and (min-width: 1200px) {
+  .formulario .mensaje {
+    padding: 1rem 35rem 1rem 1rem;
+  }
+  .formulario .mensaje-contacto {
+    padding: 1rem 35rem 12rem 1rem;
+  }
+}
+
+.informacion2 {
+  text-align: center;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+.informacion2 h2 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 1.7rem;
+  color: #0f858d;
+  margin-top: 3rem;
+}
+.informacion2 p {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.boton {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-family: "Roboto", sans-serif;
+  margin: 1rem 0 2rem 0;
+}
+.boton a {
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  color: black;
+  border: 0.1rem;
+  border-style: groove;
+  border-color: black;
+  border-radius: 5px;
+  padding: 0.5rem;
+}
+.boton a:hover {
+  background-color: black;
+  color: white;
+}
+
 header {
   background-color: black;
 }
@@ -100,102 +414,6 @@ footer section {
     justify-content: space-around;
     margin-left: 1rem;
     margin-right: 10rem;
-  }
-}
-
-.informacion {
-  text-align: center;
-  padding-left: 2rem;
-  padding-right: 2rem;
-}
-.informacion div h2 {
-  font-family: "Roboto", sans-serif;
-  font-weight: 300;
-  font-size: 1.7rem;
-  color: #0f858d;
-  margin-top: 3rem;
-}
-.informacion div p {
-  font-family: "Noto Sans", sans-serif;
-  font-size: 1rem;
-  margin-top: 2rem;
-  margin-bottom: 1.5rem;
-}
-@media screen and (min-width: 768px) {
-  .informacion .informacion h2 {
-    font-size: 2rem;
-  }
-  .informacion .informacion p {
-    font-size: 1rem;
-    margin-bottom: 5rem;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .informacion .informacion {
-    margin: 0 8rem 0 8rem;
-  }
-  .informacion .informacion p {
-    font-size: 1.1rem;
-  }
-}
-
-.productos1 .productos__bloque1 {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-}
-.productos1 .productos__bloque1 .productos__bloque-elemento {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-bottom: 1rem;
-}
-.productos1 .productos__bloque1 .productos__bloque-elemento:hover {
-  border: 0.1rem;
-  border-style: groove;
-  border-color: #0f858d;
-  background-color: #c3e5e7;
-}
-.productos1 .boton {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  font-family: "Roboto", sans-serif;
-  margin: 4rem 0 5rem 0;
-}
-.productos1 .boton a {
-  text-decoration: none;
-  font-family: "Roboto", sans-serif;
-  color: black;
-  border: 0.1rem;
-  border-style: groove;
-  border-color: black;
-  border-radius: 5px;
-  padding: 0.5rem;
-}
-.productos1 .boton a:hover {
-  background-color: black;
-  color: white;
-}
-
-section {
-  margin: 4rem 1rem 4rem 1rem;
-  font-family: "Noto Sans", sans-serif;
-  font-size: 1.1rem;
-}
-section p {
-  padding-bottom: 2rem;
-  line-height: 1.7rem;
-}
-@media screen and (min-width: 768px) {
-  section {
-    margin: 4rem 10rem 4rem 10rem;
-  }
-}
-@media screen and (min-width: 1200px) {
-  section {
-    margin: 8rem 15rem 8rem 15rem;
   }
 }
 
