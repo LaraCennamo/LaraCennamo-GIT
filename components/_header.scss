@@ -1,0 +1,60 @@
+@import "../base/variables";
+
+header{
+    background-color: black;
+        
+        nav{
+            font-size: 0.7rem;
+            ul{
+                li{
+                    .link-modificado{
+                        color: $c-blanco;
+                        &:hover{color: $c-aqua;}
+
+                        
+                    }
+                }
+            }
+        }
+
+        h1{ color: $c-blanco;
+            text-align: center;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 400;
+            font-size: 2.2rem;
+            padding-top: 1rem;}
+        
+        .horizontal{display: none;}
+
+        @media screen and (min-width: 768px) {
+
+            .vertical{
+                display: none;
+            }
+
+            .horizontal{
+                display: contents;
+            }
+
+            h1{
+                font-size: 2.5rem;
+            }
+
+            nav{
+                font-size: 1rem;
+            }
+             
+        } 
+
+        @media screen and (min-width: 1200px){
+            .horizontal{ 
+                display: contents;
+            }
+            
+            .vertical{
+                display: none;
+            }
+        }
+}
+
+
