@@ -1,4 +1,5 @@
 @import "../base/variables";
+@import "../base/mixin";
 
 footer{
     background-color: black;
@@ -8,8 +9,7 @@ footer{
 
     h3{
         font-family: 'Roboto', sans-serif;
-        font-weight: 400;
-        font-size: 2rem;
+        @include textos(2rem, 400, white);
         margin-bottom: 1.5rem;
     }
 
@@ -21,8 +21,7 @@ footer{
 
     div h4{
         font-family: 'Roboto', sans-serif;
-        font-size: 1.2rem;
-        font-weight: 400;
+        @include textos(1.2rem, 400, white);
         margin-bottom: 1.5rem;
     }
 

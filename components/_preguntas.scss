@@ -1,14 +1,10 @@
 @import "../base/variables";
+@import "../base/extends";
 
 .preguntas{
     h2{
-        font-family: 'Roboto', sans-serif;
-        font-weight: 300;
-        font-size: 2rem;
-        color: $c-aqua;
-        text-align: center;
         padding-bottom: 1rem;
-        margin-top: 3rem;
+        @extend %titulo-principal;
     }
 
     ul{

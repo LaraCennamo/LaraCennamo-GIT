@@ -1,0 +1,11 @@
+@mixin textos($size, $weigth, $color) {
+    font-size: $size;
+    font-weight: $weigth;
+    color: $color;
+}
+
+@mixin dispocision($displ, $fl) {
+    display: $displ;
+    flex-direction: $fl;
+    
+}

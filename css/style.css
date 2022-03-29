@@ -1,14 +1,16 @@
-.informacion {
-  text-align: center;
-  padding-left: 2rem;
-  padding-right: 2rem;
-}
-.informacion div h2 {
+.productos_pagindividual h2, .preguntas h2, .informacion div h2 {
   font-family: "Roboto", sans-serif;
   font-weight: 300;
   font-size: 1.7rem;
   color: #0f858d;
+  text-align: center;
   margin-top: 3rem;
+}
+
+.informacion {
+  text-align: center;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 .informacion div p {
   font-family: "Noto Sans", sans-serif;
@@ -94,14 +96,17 @@
   }
 }
 
-.preguntas h2 {
+.productos_pagindividual h2, .preguntas h2, .informacion div h2 {
   font-family: "Roboto", sans-serif;
   font-weight: 300;
-  font-size: 2rem;
+  font-size: 1.7rem;
   color: #0f858d;
   text-align: center;
-  padding-bottom: 1rem;
   margin-top: 3rem;
+}
+
+.preguntas h2 {
+  padding-bottom: 1rem;
 }
 .preguntas ul {
   list-style-type: none;
@@ -200,17 +205,20 @@ header .horizontal {
   }
 }
 
+.productos_pagindividual h2, .informacion div h2, .preguntas h2 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 1.7rem;
+  color: #0f858d;
+  text-align: center;
+  margin-top: 3rem;
+}
+
 .productos_pagindividual {
   margin-bottom: 2rem;
 }
 .productos_pagindividual h2 {
-  font-family: "Roboto", sans-serif;
-  font-weight: 300;
-  font-size: 2rem;
-  color: #0f858d;
-  text-align: center;
   padding-bottom: 3rem;
-  margin-top: 3rem;
 }
 .productos_pagindividual p {
   font-family: "Roboto", sans-serif;
@@ -366,8 +374,9 @@ footer {
 }
 footer h3 {
   font-family: "Roboto", sans-serif;
-  font-weight: 400;
   font-size: 2rem;
+  font-weight: 400;
+  color: white;
   margin-bottom: 1.5rem;
 }
 footer p {
@@ -379,6 +388,7 @@ footer div h4 {
   font-family: "Roboto", sans-serif;
   font-size: 1.2rem;
   font-weight: 400;
+  color: white;
   margin-bottom: 1.5rem;
 }
 footer div ul li a {
@@ -415,6 +425,15 @@ footer section {
     margin-left: 1rem;
     margin-right: 10rem;
   }
+}
+
+.informacion div h2, .preguntas h2, .productos_pagindividual h2 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 1.7rem;
+  color: #0f858d;
+  text-align: center;
+  margin-top: 3rem;
 }
 
 /*# sourceMappingURL=style.css.map */

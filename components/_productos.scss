@@ -1,15 +1,12 @@
 @import "../base/variables";
 @import "../components/header";
+@import "../base/extends";
+@import "../base/mixin";
 
 .productos_pagindividual{
     h2{
-        font-family: 'Roboto', sans-serif;
-        font-weight: 300;
-        font-size: 2rem;
-        color: $c-aqua;
-        text-align: center;
         padding-bottom: 3rem;
-        margin-top: 3rem;
+        @extend %titulo-principal;
     }
 
     p{
@@ -19,8 +16,9 @@
 
     .productos__bloque{
         .productos__bloque-elemento1{
-            display: flex;
-            flex-direction: column;
+            @include dispocision(flex, column);
+            // display: flex;
+            // flex-direction: column;
             align-items: center;
             margin-bottom: 1.5rem;
             transition: all 1s;
