@@ -1,8 +1,8 @@
 @import "../base/maps";
+@import "../base/mixin";
 
 .formulario{
-    display: flex;
-    flex-direction: column;
+    @include dispocision(flex, column);
     align-items: center;
     ul{
         li{
@@ -57,8 +57,7 @@
 }
 
 .boton{
-    display: flex;
-    flex-direction: row;
+    @include dispocision(flex, row);
     justify-content: center;
     font-family: 'Roboto', sans-serif;
     margin: 1rem 0 2rem 0;
