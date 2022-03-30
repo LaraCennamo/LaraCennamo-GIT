@@ -1,5 +1,6 @@
 @import "../base/variables";
 @import "../base/extends";
+@import "../base/maps";
 
 .informacion{
     text-align: center;
@@ -82,9 +83,7 @@
             text-decoration: none;    
             font-family: 'Roboto', sans-serif;
             color: rgb(0, 0, 0);
-            border: 0.1rem;
-            border-style:groove;
-            border-color: rgb(0, 0, 0);
+            border: map-get($color , bordes );
             border-radius: 5px;
             padding: 0.5rem;
             &:hover{background-color: black;

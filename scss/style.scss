@@ -1,11 +1,14 @@
 
-@import "../components/principal";
-@import "../components/about";
-@import "../components/preguntas";
-@import "../components/productos";
-@import "../components/contacto";
-@import "../components/header";
-@import "../components/footer";
-@import "../base/variables";
-@import "../base/extends";
-@import "../base/mixin";
+@import "./components/principal";
+@import "./components/about";
+@import "./components/preguntas";
+@import "./components/productos";
+@import "./components/contacto";
+@import "./components/header";
+@import "./components/footer";
+@import "./base/variables";
+@import "./base/extends";
+@import "./base/mixin";
+@import "./base/maps"
+
+

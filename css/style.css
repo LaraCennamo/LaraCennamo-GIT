@@ -65,9 +65,7 @@
   text-decoration: none;
   font-family: "Roboto", sans-serif;
   color: black;
-  border: 0.1rem;
-  border-style: groove;
-  border-color: black;
+  border: 0.1rem groove black;
   border-radius: 5px;
   padding: 0.5rem;
 }
@@ -309,9 +307,7 @@ header .horizontal {
   text-decoration: none;
   font-family: "Roboto", sans-serif;
   color: black;
-  border: 0.1rem;
-  border-style: groove;
-  border-color: black;
+  border: 0.1rem groove black;
   border-radius: 5px;
   padding: 0.5rem;
 }
@@ -376,7 +372,6 @@ footer h3 {
   font-family: "Roboto", sans-serif;
   font-size: 2rem;
   font-weight: 400;
-  color: white;
   margin-bottom: 1.5rem;
 }
 footer p {
@@ -388,7 +383,6 @@ footer div h4 {
   font-family: "Roboto", sans-serif;
   font-size: 1.2rem;
   font-weight: 400;
-  color: white;
   margin-bottom: 1.5rem;
 }
 footer div ul li a {

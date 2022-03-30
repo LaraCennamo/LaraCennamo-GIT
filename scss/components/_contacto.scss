@@ -1,3 +1,4 @@
+@import "../base/maps";
 
 .formulario{
     display: flex;
@@ -5,7 +6,7 @@
     align-items: center;
     ul{
         li{
-            list-style-type: none;
+            list-style-type: map-get($color , decoration);
             font-family: 'Noto Sans', sans-serif;
             text-align: justify;
             color: #797979;
@@ -42,7 +43,7 @@
     padding-left: 2rem;
     padding-right: 2rem;
 
-    h2{  font-family: 'Roboto', sans-serif;
+    h2{ font-family: 'Roboto', sans-serif;
         font-weight: 300;
         font-size: 1.7rem;
         color: rgb(15, 133, 141);
@@ -62,13 +63,11 @@
     font-family: 'Roboto', sans-serif;
     margin: 1rem 0 2rem 0;
     
-    a{
-        text-decoration: none;    
+    a{  
+        text-decoration: map-get($color , decoration );    
         font-family: 'Roboto', sans-serif;
         color: rgb(0, 0, 0);
-        border: 0.1rem;
-        border-style:groove;
-        border-color: rgb(0, 0, 0);
+        border: map-get($color, bordes );
         border-radius: 5px;
         padding: 0.5rem;
         &:hover{background-color: black;
