@@ -158,7 +158,9 @@
 }
 
 header {
-  background-color: black;
+  background-color: #161616;
+  opacity: 95%;
+  position: relative;
 }
 header nav {
   font-size: 0.7rem;
@@ -317,7 +319,9 @@ header .horizontal {
 }
 
 header {
-  background-color: black;
+  background-color: #161616;
+  opacity: 95%;
+  position: relative;
 }
 header nav {
   font-size: 0.7rem;
