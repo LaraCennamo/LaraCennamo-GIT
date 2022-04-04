@@ -8,20 +8,30 @@
         @extend %titulo-principal;
     }
 
+    h3{
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+        font-size: 1.7rem;
+        color: rgb(15, 133, 141);
+        text-align: center;
+        margin-top: 2rem;
+    }
+
     ul{
         list-style-type: none;
         text-decoration: none;
         font-family: 'Noto Sans', sans-serif;
-        text-align: center;
+        text-align: left;
         padding-top: 1.5rem;
-        padding-right: 2rem;
+  
         
         li{
             padding-bottom: 1rem;
 
             @media screen and (min-width: 768px){
                 padding-bottom: 1rem;
-                text-align: justify;
+                font-size: 1.1rem;
+                text-align: left;
             }
 
             @media screen and (min-width: 1200px){
@@ -37,25 +47,35 @@
 
 }
 
+.mas-sobre{
+
+    p{
+        font-family: 'Roboto', sans-serif;
+        font-weight: 500;
+        color: rgb(185, 185, 185);
+        margin: 3rem 6rem 0rem 6rem;
+    }
 
 
-.imagenes{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding-top: 2rem;
-    border: 0.1rem;
-    border-top-style:groove;
-    border-color: rgb(0, 0, 0);
-    margin-bottom: 2rem;
+
+    .imagenes{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-top: 2rem;
+        margin-bottom: 2rem; 
+    }
+
 
     @media screen and (min-width: 768px){
-        @include dispocision(flex, row);
-        justify-content: center;
-        margin: 0 6rem 3rem 6rem;
-        padding-top: 2rem;
-        border: 0.1rem;
-        border-top-style:groove;
-        border-color: rgb(0, 0, 0);
+
+        .imagenes{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            margin: 0 6rem 3rem 6rem;
+            padding-top: 1rem; 
+        }
+
     }
 }

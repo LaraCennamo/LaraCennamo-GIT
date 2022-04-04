@@ -1,79 +1,3 @@
-.productos_pagindividual h2, .preguntas h2, .informacion div h2 {
-  font-family: "Roboto", sans-serif;
-  font-weight: 300;
-  font-size: 1.7rem;
-  color: #0f858d;
-  text-align: center;
-  margin-top: 3rem;
-}
-
-.informacion {
-  text-align: center;
-  padding-left: 2rem;
-  padding-right: 2rem;
-}
-.informacion div p {
-  font-family: "Noto Sans", sans-serif;
-  font-size: 1rem;
-  margin-top: 2rem;
-  margin-bottom: 1.5rem;
-}
-@media screen and (min-width: 768px) {
-  .informacion .informacion h2 {
-    font-size: 2rem;
-  }
-  .informacion .informacion p {
-    font-size: 1rem;
-    margin-bottom: 5rem;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .informacion .informacion {
-    margin: 0 2rem 0 2rem;
-  }
-  .informacion .informacion p {
-    font-size: 1.1rem;
-  }
-}
-
-.productos1 .productos__bloque1 {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-}
-.productos1 .productos__bloque1 .productos__bloque-elemento {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-bottom: 1rem;
-}
-.productos1 .productos__bloque1 .productos__bloque-elemento:hover {
-  border: 0.1rem;
-  border-style: groove;
-  border-color: #0f858d;
-  background-color: #c3e5e7;
-}
-.productos1 .boton {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  font-family: "Roboto", sans-serif;
-  margin: 4rem 0 5rem 0;
-}
-.productos1 .boton a {
-  text-decoration: none;
-  font-family: "Roboto", sans-serif;
-  color: black;
-  border: 0.1rem groove black;
-  border-radius: 5px;
-  padding: 0.5rem;
-}
-.productos1 .boton a:hover {
-  background-color: black;
-  color: white;
-}
-
 .texto {
   margin: 4rem 1rem 4rem 1rem;
   font-family: "Noto Sans", sans-serif;
@@ -90,29 +14,36 @@
 }
 @media screen and (min-width: 1200px) {
   .texto {
-    margin: 8rem 15rem 8rem 15rem;
+    margin: 6rem 12rem 0 12rem;
   }
 }
 
-.productos_pagindividual h2, .preguntas h2, .informacion div h2 {
+.productos_pagindividual h2, .informacion div h2, .preguntas h2 {
   font-family: "Roboto", sans-serif;
   font-weight: 300;
   font-size: 1.7rem;
   color: #0f858d;
   text-align: center;
-  margin-top: 3rem;
+  margin-top: 6rem;
 }
 
 .preguntas h2 {
   padding-bottom: 1rem;
 }
+.preguntas h3 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 1.7rem;
+  color: #0f858d;
+  text-align: center;
+  margin-top: 2rem;
+}
 .preguntas ul {
   list-style-type: none;
   text-decoration: none;
   font-family: "Noto Sans", sans-serif;
-  text-align: center;
+  text-align: left;
   padding-top: 1.5rem;
-  padding-right: 2rem;
 }
 .preguntas ul li {
   padding-bottom: 1rem;
@@ -120,7 +51,8 @@
 @media screen and (min-width: 768px) {
   .preguntas ul li {
     padding-bottom: 1rem;
-    text-align: justify;
+    font-size: 1.1rem;
+    text-align: left;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -134,118 +66,27 @@
   }
 }
 
-.imagenes {
+.mas-sobre p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  color: #b9b9b9;
+  margin: 3rem 6rem 0rem 6rem;
+}
+.mas-sobre .imagenes {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   padding-top: 2rem;
-  border: 0.1rem;
-  border-top-style: groove;
-  border-color: black;
   margin-bottom: 2rem;
 }
 @media screen and (min-width: 768px) {
-  .imagenes {
+  .mas-sobre .imagenes {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-evenly;
     margin: 0 6rem 3rem 6rem;
-    padding-top: 2rem;
-    border: 0.1rem;
-    border-top-style: groove;
-    border-color: black;
+    padding-top: 1rem;
   }
-}
-
-header {
-  background-color: #161616;
-  opacity: 95%;
-  position: relative;
-}
-header nav {
-  font-size: 0.7rem;
-}
-header nav ul li .link-modificado {
-  color: white;
-}
-header nav ul li .link-modificado:hover {
-  color: #0f858d;
-}
-header h1 {
-  color: white;
-  text-align: center;
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-size: 2.2rem;
-  padding-top: 1rem;
-}
-header .horizontal {
-  display: none;
-}
-@media screen and (min-width: 768px) {
-  header .vertical {
-    display: none;
-  }
-  header .horizontal {
-    display: contents;
-  }
-  header h1 {
-    font-size: 2.5rem;
-  }
-  header nav {
-    font-size: 1rem;
-  }
-}
-@media screen and (min-width: 1200px) {
-  header .horizontal {
-    display: contents;
-  }
-  header .vertical {
-    display: none;
-  }
-}
-
-.productos_pagindividual h2, .informacion div h2, .preguntas h2 {
-  font-family: "Roboto", sans-serif;
-  font-weight: 300;
-  font-size: 1.7rem;
-  color: #0f858d;
-  text-align: center;
-  margin-top: 3rem;
-}
-
-.productos_pagindividual {
-  margin-bottom: 2rem;
-}
-.productos_pagindividual h2 {
-  padding-bottom: 3rem;
-}
-.productos_pagindividual p {
-  font-family: "Roboto", sans-serif;
-  padding-bottom: 1rem;
-}
-.productos_pagindividual .productos__bloque {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-}
-.productos_pagindividual .productos__bloque .productos__bloque-elemento1 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 1.5rem;
-  transition: all 1s;
-}
-.productos_pagindividual .productos__bloque .productos__bloque-elemento1:hover {
-  transform: scale(1.02);
-  -webkit-transform: scale(1.02);
-  -o-transform: scale(1.02);
-  border: 0.1rem;
-  border-style: groove;
-  border-color: #0f858d;
-  background-color: #dceef0;
-  font-weight: 500;
 }
 
 .formulario {
@@ -261,7 +102,7 @@ header .horizontal {
   margin-bottom: 1rem;
   border: 0.1rem;
   border-style: groove;
-  border-radius: 5px;
+  border-radius: 2px;
   border-color: black;
 }
 .formulario .mensaje {
@@ -310,7 +151,7 @@ header .horizontal {
   font-family: "Roboto", sans-serif;
   color: black;
   border: 0.1rem groove black;
-  border-radius: 5px;
+  border-radius: 1px;
   padding: 0.5rem;
 }
 .boton a:hover {
@@ -381,38 +222,30 @@ footer h3 {
 footer p {
   font-family: "Noto Sans", sans-serif;
   font-size: 0.8rem;
+  color: #b6b6b6;
   margin: 0 0 1rem 0;
 }
-footer div h4 {
-  font-family: "Roboto", sans-serif;
-  font-size: 1.2rem;
-  font-weight: 400;
-  margin-bottom: 1.5rem;
+footer .footer__huellas {
+  padding-left: 2rem;
+}
+footer div ul li {
+  list-style-type: none;
 }
 footer div ul li a {
-  list-style-type: decimal;
   text-decoration: none;
-  color: #FFFFFF;
+  color: #b6b6b6;
   font-family: "Noto Sans", sans-serif;
   font-size: 0.8rem;
 }
-footer .footer__redes div {
+footer div ul li a:hover {
+  color: #0f858d;
+}
+footer .footer__redes {
   display: flex;
-  align-items: center;
-  margin-bottom: 0.5rem;
+  padding-left: 2rem;
 }
-footer .footer__redes div a {
-  text-decoration: none;
-  color: #FFFFFF;
-  font-family: "Noto Sans", sans-serif;
-  font-size: 0.8rem;
-}
-footer .footer__redes div img {
+footer .footer__redes img {
   padding-right: 0.6rem;
-}
-footer section {
-  display: grid;
-  grid-template-columns: 1fr;
 }
 @media screen and (min-width: 768px) {
   footer section {
@@ -420,18 +253,148 @@ footer section {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin-left: 1rem;
-    margin-right: 10rem;
+  }
+  footer .footer__huellas {
+    padding-left: 0rem;
+  }
+  footer ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-bottom: 5rem;
+  }
+  footer ul li {
+    padding-left: 2rem;
+    padding-top: 0.8rem;
+  }
+  footer .links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
   }
 }
 
-.informacion div h2, .preguntas h2, .productos_pagindividual h2 {
+.productos_pagindividual h2, .informacion div h2, .preguntas h2 {
   font-family: "Roboto", sans-serif;
   font-weight: 300;
   font-size: 1.7rem;
   color: #0f858d;
   text-align: center;
-  margin-top: 3rem;
+  margin-top: 6rem;
+}
+
+.informacion {
+  text-align: center;
+}
+.informacion div p {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 1.1rem;
+  margin-top: 2rem;
+  margin-bottom: 6rem;
+}
+@media screen and (min-width: 768px) {
+  .informacion .informacion h2 {
+    font-size: 2rem;
+  }
+  .informacion .informacion p {
+    font-size: 1rem;
+    margin-bottom: 5rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .informacion .informacion {
+    margin: 0 2rem 6rem 2rem;
+  }
+  .informacion .informacion p {
+    font-size: 1rem;
+    margin: 2rem 5rem 5rem 5rem;
+  }
+}
+
+.productos1 .productos__bloque1 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+@media screen and (min-width: 1200px) {
+  .productos1 .productos__bloque1 {
+    margin: 0 8rem 0 8rem;
+  }
+}
+.productos1 .productos__bloque1 .productos__bloque-elemento {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 1rem;
+  border: 0px;
+  border-radius: 0%;
+  font-family: "Noto Sans", sans-serif;
+}
+.productos1 .productos__bloque1 .productos__bloque-elemento:hover {
+  background-color: #dceef0;
+  font-weight: 700;
+}
+.productos1 .boton {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-family: "Roboto", sans-serif;
+  margin: 4rem 0 5rem 0;
+}
+.productos1 .boton a {
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  color: black;
+  border: 0.1rem groove black;
+  border-radius: 2px;
+  padding: 0.5rem;
+}
+.productos1 .boton a:hover {
+  background-color: black;
+  color: white;
+}
+
+.productos_pagindividual {
+  margin-bottom: 2rem;
+}
+.productos_pagindividual h2 {
+  padding-bottom: 3rem;
+}
+.productos_pagindividual p {
+  font-family: "Noto Sans", sans-serif;
+}
+.productos_pagindividual .productos__bloque {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.productos_pagindividual .productos__bloque .productos__bloque-elemento1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  transition: all 0.8s;
+  border: none;
+}
+.productos_pagindividual .productos__bloque .productos__bloque-elemento1:hover {
+  transform: scale(1.02);
+  -webkit-transform: scale(1.02);
+  -o-transform: scale(1.02);
+  border: 0rem;
+  border-style: groove;
+  background-color: #dceef0;
+  font-weight: 700;
+}
+
+.preguntas h2, .informacion div h2, .productos_pagindividual h2 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 1.7rem;
+  color: #0f858d;
+  text-align: center;
+  margin-top: 6rem;
 }
 
 /*# sourceMappingURL=style.css.map */

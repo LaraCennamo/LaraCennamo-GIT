@@ -1,0 +1,142 @@
+@import "../base/variables";
+@import "../base/extends";
+
+// INDEX
+
+.informacion{
+    text-align: center;
+
+    div{
+
+        h2{
+            @extend %titulo-principal;
+        }
+        
+        p{
+            font-family: 'Noto Sans', sans-serif;
+            font-size: 1.1rem;
+            margin-top: 2rem;
+            margin-bottom: 6rem;
+        }
+    }
+
+     @media screen and (min-width: 768px){
+
+         .informacion{
+             h2{
+                 font-size: 2rem;
+             }
+
+             p{
+                 font-size: 1rem;
+                 margin-bottom: 5rem;
+             }
+         }
+     }
+
+     @media screen and (min-width: 1200px){
+         .informacion{
+             margin: 0 2rem 6rem 2rem;
+
+             p{
+                 font-size: 1rem;
+                 margin: 2rem 5rem 5rem 5rem;
+            }
+         }
+
+  }
+
+}
+
+.productos1{
+    .productos__bloque1{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+
+        @media screen and (min-width: 1200px){
+            margin: 0 8rem 0 8rem;
+        }
+
+        .productos__bloque-elemento{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-bottom: 1rem;
+            border: 0px;
+            border-radius: 0%;
+
+            font-family: 'Noto Sans', sans-serif;
+
+            &:hover{
+                background-color:rgb(220, 238, 240); 
+                font-weight: 700;
+            }
+        }
+    }
+
+    .boton{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        font-family: 'Roboto', sans-serif;
+        margin: 4rem 0 5rem 0;
+        
+        a{
+            text-decoration: none;    
+            font-family: 'Roboto', sans-serif;
+            color: rgb(0, 0, 0);
+            border: map-get($color , bordes );
+            border-radius: 2px;
+            padding: 0.5rem;
+            &:hover{background-color: black;
+                color: $c-blanco;}
+        }
+    }
+}
+
+
+
+
+
+// PRODUCTOS
+
+.productos_pagindividual{
+    h2{
+        padding-bottom: 3rem;
+        @extend %titulo-principal;
+    }
+
+    p{
+        font-family: 'Noto Sans', sans-serif;
+    }
+
+    .productos__bloque{
+        .productos__bloque-elemento1{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 1.5rem;
+            transition: all 0.8s;
+            border: none;
+
+        &:hover{
+            transform: scale(1.02);
+            -webkit-transform: scale(1.02);
+            -o-transform: scale(1.02) ;
+        
+            border: 0rem;
+            border-style:groove;
+            background-color:rgb(220, 238, 240);
+            font-weight: 700;
+        }
+        }
+
+        @include dispocision(flex, row);
+        flex-wrap: wrap;
+        justify-content:space-evenly;
+    }
+
+    margin-bottom: 2rem;
+}
